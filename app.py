@@ -1,5 +1,5 @@
 import streamlit as st    
-import cv2
+import cv2   
 import pytesseract 
 from PIL import Image  # python imaging library to open the images in streamlit because streamlit doesn't images to display directly 
 pytesseract.pytesseract.tesseract_cmd='/app/.apt/usr/bin/tesseract'
