@@ -1,4 +1,4 @@
-import streamlit as st                
+import streamlit as st                  
 import cv2   
 import pytesseract 
 from PIL import Image  # python imaging library to open the images in streamlit because streamlit doesn't images to display directly 
@@ -16,4 +16,4 @@ if uploaded_file is not None:   #only if a file is uploaded, then perform the be
   if st.button('PREDICT'):  #creates a button called predict and gives the ocr output below 
     st.write("Result:")     
     info = pytesseract.image_to_string(img)  #performs ocr 
-    st.write(info)                   #prints the result 
+    st.write(info)                   #prints the result
